@@ -10,10 +10,35 @@
     <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
 </head>
 <body>
-    <header>
-        <h1>WELCOME</h1>
-        <h2>CAMILA</h2>
-        <h2>GUIMARAES-RIVEST</h2>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__welcome">WELCOME</h1>
+            <!-- <div class="header__name">
+                <h2>CAMILA</h2>
+                <h2>GUIMARAES-RIVEST</h2>
+            </div> -->
+            <h2 class="header__name">CAMILA</h2>
+            <h2 class="header__name">GUIMARAES-RIVEST</h2>
+        </div>
+        <div class="header__fade"></div>
     </header>
+
+    <main>
+        <section class="display-btn__container">
+            <button class="display-btn">projects</button>
+            <button class="display-btn">about me</button>
+            <button class="display-btn">contact</button>
+        </section>
+
+        <section class="projects body-container">
+            <div class="projects__item">
+                <img class="projects__item--shifting-peace" src="/images/IA.png" alt="Shifting Peace">
+                <div class="project__label">
+                    <h3 class="projects__name">Shifting Peace</h3>
+                    <p>MAX MSP</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

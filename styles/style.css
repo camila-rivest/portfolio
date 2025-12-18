@@ -1,3 +1,76 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.body-container {
+  width: 90%;
+  margin: auto;
+}
+
+/* header {
+  height: 100vh;
+} */
+
 .header {
-  background-color: #000512;  
+  background: url(/images/header-mobile.jpg) no-repeat center ;
+  height: 90vh;
+  /* width: 100%; */
+  /* position: fixed; */
+  z-index: -3;
+  position: relative;
+}
+
+.header__container {
+  top: 0;
+}
+
+.header__welcome {
+  font-size: 2.5rem;
+  width: 90%;
+  margin: 0 auto 2rem auto;
+  padding-top: 3rem;
+  text-shadow: 2px 2px 2px #000000;   
+}
+
+.header__name {
+  text-shadow: 2px 2px 2px #000000;   
+  font-size: 1.8rem;
+  font-weight: normal;
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+.header__fade {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.7) 56%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%);
+}
+
+.display-btn__container {
+  display: flex;
+  justify-content: space-evenly;
+  width: min(85%, 900px);
+  margin: auto;
+
+}
+
+.display-btn {
+  color: white;
+  font-size: 1.2rem;
+  background-color: #000000;
+  /* border: #01a0a4 inset 2px; */
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.projects {
+  margin-top: 3rem;
+}
+
+.projects__name {
+  text-align: center;
 }
