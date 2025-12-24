@@ -58,6 +58,7 @@ a:not([class]) {
 
 a { /* all links current color */
     color: currentColor;
+    text-decoration: none;
 }
 
 /* Make images easier to work with */

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="/styles/modern-normalize.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="menu-selection.js" defer></script>
     <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
 </head>
+
 <body>
     <header class="header">
         <div class="header__container">
@@ -25,18 +27,18 @@
 
     <main>
         <section class="display-btn__container">
-            <button class="display-btn">Projects</button>
-            <button class="display-btn">About me</button>
-            <button class="display-btn">Contact</button>
+            <button class="display-btn" id="display-btn__projects" onclick="displayProjects()">Projects</button>
+            <button class="display-btn" id="display-btn__about-me" onclick="displayAboutMe()">About me</button>
+            <button class="display-btn" id="display-btn__contact" onclick="displayContact()">Contact</button>
         </section>
 
-        <section class="projects body-container">
-            <div class="projects__item projects__item--shifting-peace">
+        <section class="projects body-container" id="projects">
+            <div class="projects__item projects__item--shifting-peace"><a href="shifting-peace.html" target="_blank">
                 <img class="projects__img projects__img--shifting-peace" src="/images/IA.png" alt="Shifting Peace">
                 <div class="projects__label">
                     <h3 class="projects__name">Shifting Peace</h3>
                     <p class="projects__medium">MAX MSP</p>
-                </div>
+                </a></div>
             </div>
             <div class="projects__item">
                 <img class="projects__img projects__img--search" src="/images/p5.jpg" alt="Search">
@@ -73,6 +75,14 @@
                     <p class="projects__medium">Microcontroller, Neopixels</p>
                 </div>
             </div>
+        </section>
+
+        <section class="about-me" id="about-me">
+            <p>about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit ea qui dignissimos laboriosam dicta magnam minima suscipit distinctio non libero officia consequatur voluptas eius numquam ullam explicabo fuga neque!</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <p>contact me Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error autem rerum dolore debitis aspernatur omnis quod, dolor distinctio ut officia soluta temporibus quisquam quos aliquid hic provident quibusdam quia.</p>
         </section>
     </main>
 </body>
