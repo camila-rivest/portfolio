@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #000000;
   color: white;
 }
 
@@ -13,10 +13,8 @@ body {
 } */
 
 .header {
-  background: url(/images/header-mobile.jpg) no-repeat center ;
-  height: 90vh;
-  /* width: 100%; */
-  /* position: fixed; */
+  background: url(/images/header-mobile1.jpg) 40% top no-repeat;
+  height: 100vh;
   z-index: -3;
   position: relative;
 }
@@ -34,11 +32,12 @@ body {
 }
 
 .header__name {
-  text-shadow: 2px 2px 2px #000000;   
+  text-shadow: 2px 2px 2px #0000009e;   
   font-size: 1.8rem;
   font-weight: normal;
   width: 90%;
   margin: 0.5rem auto;
+  background-color: #0000004a;
 }
 
 .header__fade {
@@ -52,8 +51,9 @@ body {
 .display-btn__container {
   display: flex;
   justify-content: space-evenly;
-  width: min(85%, 900px);
-  margin: auto;
+  width: min(85%, 550px);
+  margin: 4rem auto 0 auto;
+  border-bottom: #03d8c6 solid 3px;
 
 }
 
@@ -63,14 +63,37 @@ body {
   background-color: #000000;
   /* border: #01a0a4 inset 2px; */
   border: none;
-  padding: 8px;
+  padding: 20px 8px;
   cursor: pointer;
 }
 
 .projects {
-  margin-top: 3rem;
+  max-width: min(100%, 550px);
+  margin: 2rem auto;
+}
+
+.projects__item {
+  /* margin:rem 0; */
+  padding: 2rem 0;
+  /* border-bottom:  #00626b solid 1px; */
+}
+
+.projects__img {
+  border: #03d8c691 solid 3px;
 }
 
 .projects__name {
+  font-size: 1.3rem;
   text-align: center;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.projects__medium {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  /* color: #cfcfcf; */
+  color: #03d8c6;
+  letter-spacing: 2px;
 }
