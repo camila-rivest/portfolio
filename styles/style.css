@@ -110,3 +110,104 @@ body {
 #about-me {
   display: none;
 }
+
+.main-container {
+  
+}
+
+
+
+
+.hide-mobile {
+    display: none;
+}
+
+.nav-mobile {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+    width: 100%;
+}
+
+.nav-mobile--positioning {
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    align-items: center;
+    height: 4rem;
+}
+
+#open-sidebar-button, #close-sidebar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 1em;
+}
+
+.icon {
+    width: 2rem;
+    height: auto;
+}
+
+#overlay {
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9; /* in front of everything except nav */
+    display: none;
+}
+
+
+.nav-show ~ #overlay {
+    display: block;
+}
+
+
+.nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    min-height: 100lvh;
+    width: min(15em, 100%);
+    z-index: 100;
+    border-left: 1px solid #b9b9b9;
+    transition: right 300ms ease-out;
+}    
+
+.nav-show { /* has to be below .nav to overwrite */
+    right: 0;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: #005b6a;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__list--primary {
+    margin: 0.2rem 0 2rem 0;
+    flex-direction: column;
+}
+
+.nav__list a {
+    display: inline-block;
+    width: 100%;
+    padding-left: 1em;
+}
+
+.nav__btn {
+    display: block;
+    padding: 0.5em 0;
+}
+
+.nav__list--primary a:hover {
+    text-decoration: underline 3px;
+    text-underline-offset: 5px;
+}
