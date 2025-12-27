@@ -113,8 +113,14 @@ body {
 
 .main-container {
   max-width: 1000px;
+  margin-top: 4rem;
 }
 
+
+.nav__list {
+  display: flex;
+  flex-flow: wrap;
+}
 
 
 
@@ -135,7 +141,12 @@ body {
     justify-content: space-between;
     margin:auto;
     align-items: center;
-    height: 4rem;
+    height: 3rem;
+}
+
+.nav__title {
+  font-size: 0.8rem;
+  margin: 0;
 }
 
 #open-sidebar-button, #close-sidebar-button {
@@ -165,14 +176,14 @@ body {
 
 
 .nav {
-    background-color: white;
+    background-color: #000000;
     position: fixed;
     top: 0;
     right: -100%;
     min-height: 100lvh;
     width: min(15em, 100%);
     z-index: 100;
-    border-left: 1px solid #b9b9b9;
+    border-left: 1px solid #03d8c6;
     transition: right 300ms ease-out;
 }    
 
@@ -180,16 +191,16 @@ body {
     right: 0;
 }
 
-.nav__list {
+/* .nav__list {
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
     font-size: 1.2rem;
-    color: #005b6a;
+    color: #ffffff;
     letter-spacing: 0.1em;
     padding: 0;
     margin: 0;
-}
+} */
 
 .nav__list--primary {
     margin: 0.2rem 0 2rem 0;
