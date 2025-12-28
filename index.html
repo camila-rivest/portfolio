@@ -29,64 +29,66 @@
     </header>
 
     <main>
-        <section class="display-btn__container" id="display-btn">
-            <button class="display-btn" id="display-btn__projects" onclick="displayProjects()">Projects</button>
-            <button class="display-btn" id="display-btn__about-me" onclick="displayAboutMe()">About me</button>
-            <button class="display-btn" id="display-btn__contact" onclick="displayContact()">Contact</button>
-        </section>
-
-        <section class="projects body-container" id="projects">
-            <div class="projects__item projects__item--shifting-peace"><a href="shifting-peace.html">
-                <img class="projects__img projects__img--shifting-peace" src="/images/IA.png" alt="Shifting Peace">
-                <div class="projects__label">
-                    <h3 class="projects__name">Shifting Peace</h3>
-                    <p class="projects__medium">MAX MSP</p>
-                </a></div>
-            </div>
-            <div class="projects__item">
-                <img class="projects__img projects__img--search" src="/images/p5.jpg" alt="Search">
-                <div class="projects__label">
-                    <h3 class="projects__name">Search</h3>
-                    <p class="projects__medium">p5.js</p>
+        <div class="main-container__fade"></div>
+        <div class="main-container">
+            <section class="display-btn__container" id="display-btn">
+                <button class="display-btn" id="display-btn__projects" onclick="displayProjects()">Projects</button>
+                <button class="display-btn" id="display-btn__about-me" onclick="displayAboutMe()">About me</button>
+                <button class="display-btn" id="display-btn__contact" onclick="displayContact()">Contact</button>
+            </section>
+            <section class="projects body-container" id="projects">
+                <div class="projects__item projects__item--shifting-peace">
+                    <a href="shifting-peace.html">
+                        <img class="projects__img projects__img--shifting-peace" src="/images/IA.png" alt="Shifting Peace">
+                    </a>
+                    <div class="projects__label">
+                        <h3 class="projects__name"><a href="shifting-peace.html">Shifting Peace</a></h3>
+                        <p class="projects__medium"><a href="shifting-peace.html">MAX MSP</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects__item">
-                <img class="projects__img projects__img--ambient-DnB" src="/images/DnB.jpg" alt="Ambient DnB Generator">
-                <div class="projects__label">
-                    <h3 class="projects__name">Ambient DnB Generator</h3>
-                    <p class="projects__medium">MAX MSP</p>
+                <div class="projects__item">
+                    <img class="projects__img projects__img--search" src="/images/p5.jpg" alt="Search">
+                    <div class="projects__label">
+                        <h3 class="projects__name">Search</h3>
+                        <p class="projects__medium">p5.js</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects__item">
-                <img class="projects__img projects__img--consumed" src="/images/bitsy1.png" alt="Consume">
-                <div class="projects__label">
-                    <h3 class="projects__name">Consumed</h3>
-                    <p class="projects__medium">Bisty</p>
+                <div class="projects__item">
+                    <img class="projects__img projects__img--ambient-DnB" src="/images/DnB.jpg" alt="Ambient DnB Generator">
+                    <div class="projects__label">
+                        <h3 class="projects__name">Ambient DnB Generator</h3>
+                        <p class="projects__medium">MAX MSP</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects__item">
-                <img class="projects__img projects__img--photos" src="/images/purepurepure.jpg" alt="">
-                <div class="projects__label">
-                    <h3 class="projects__name">photos music</h3>
-                    <p class="projects__medium">Photography, Photoshop</p>
+                <div class="projects__item">
+                    <img class="projects__img projects__img--consumed" src="/images/bitsy1.png" alt="Consume">
+                    <div class="projects__label">
+                        <h3 class="projects__name">Consumed</h3>
+                        <p class="projects__medium">Bisty</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects__item">
-                <img class="projects__img projects__img--spiralling-colours" src="/images/lamp.png" alt="Spiralling Colours">
-                <div class="projects__label">
-                    <h3 class="projects__name">Spiralling Colours</h3>
-                    <p class="projects__medium">Microcontroller, Neopixels</p>
+                <div class="projects__item">
+                    <img class="projects__img projects__img--photos" src="/images/purepurepure.jpg" alt="">
+                    <div class="projects__label">
+                        <h3 class="projects__name">photos music</h3>
+                        <p class="projects__medium">Photography, Photoshop</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="about-me" id="about-me">
-            <p>about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit ea qui dignissimos laboriosam dicta magnam minima suscipit distinctio non libero officia consequatur voluptas eius numquam ullam explicabo fuga neque!</p>
-        </section>
-
-        <section class="contact" id="contact">
-            <p>contact me Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error autem rerum dolore debitis aspernatur omnis quod, dolor distinctio ut officia soluta temporibus quisquam quos aliquid hic provident quibusdam quia.</p>
-        </section>
+                <div class="projects__item">
+                    <img class="projects__img projects__img--spiralling-colours" src="/images/lamp.png" alt="Spiralling Colours">
+                    <div class="projects__label">
+                        <h3 class="projects__name">Spiralling Colours</h3>
+                        <p class="projects__medium">Microcontroller, Neopixels</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about-me" id="about-me">
+                <p>about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit ea qui dignissimos laboriosam dicta magnam minima suscipit distinctio non libero officia consequatur voluptas eius numquam ullam explicabo fuga neque!</p>
+            </section>
+            <section class="contact" id="contact">
+                <p>contact me Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error autem rerum dolore debitis aspernatur omnis quod, dolor distinctio ut officia soluta temporibus quisquam quos aliquid hic provident quibusdam quia.</p>
+            </section>
+        </div>
     </main>
 </body>
 </html>
