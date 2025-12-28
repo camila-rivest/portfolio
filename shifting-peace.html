@@ -8,62 +8,35 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="navbar.js" defer></script>
-    <!-- <script src="menu-selection.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <nav>
-        <p><a href="index.html">CAMILA GUIMARAES-RIVEST</a></p>
+    <nav class="nav">
+        <!-- <p class="nav__title"><a href="index.html">CAMILA GUIMARAES-RIVEST</a></p> -->
         <ul class="nav__list">
-            <li><a href="index.html">PROJECTS</a></li>
-            <li><a href="index.html">ABOUT ME</a></li>
-            <li><a href="index.html">CONTACT</a></li>
+            <li class="nav__option nav__option--active"><a href="index.html">Projects</a></li>
+            <li class="nav__option"><a href="index.html">About me</a></li>
+            <li class="nav__option"><a href="index.html">Contact</a></li>
         </ul>  
     </nav>
-    <!-- <nav class="nav-mobile hide-tablet hide-desktop">
-        <div class="nav-mobile--positioning body-container ">
-            <p class="nav__title">CAMILA GUIMARAES-RIVEST</p>
-            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
-                <img class="icon" src="/images/menu.svg">
-            </button>
-        </div>
-    </nav>
 
-    <nav class="nav" id="navbar">
-        <div class="nav__logo hide-mobile show-tablet">
-            <p>CAMILA GUIMARAES-RIVEST</p>
-        </div>
-        <div class="nav-container" id="top">
-            <ul class="nav__list nav__list--primary">
-                <li class="hide-tablet hide-desktop"><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img class="icon"src="/images/close.svg"></button></li>
-                <li class="hide-tablet hide-desktop"><a href="index.html">HOME</a></li>
-                <li><a href="index.html">PROJECTS</a></li>
-                <li><a href="index.html">ABOUT ME</a></li>
-                <li><a href="index.html">CONTACT</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div> -->
-    <!-- <header>
-        
-        <ul>
-            <li>Camila Guimaraes-Rivest</li>
-            <div>
-                <li>Projects</li>
-                <li>About me</li>
-                <li>Contact</li>
-            </div>
-        </ul>
-    </header>
-     -->
     <main>
         <div class="main-container body-container">
-            <button><<< Back</button>
-            <img src="/images/IA.png" alt="">
-            <h2>Shifting Peace</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolor ad in, adipisci doloremque eos asperiores reprehenderit laborum quis ipsum voluptates, dicta odio. Repellendus unde quos, voluptatibus maiores voluptatum cumque.</p>
-
-
+            <a class="back-btn" href="index.html#display-btn"><<< Back</a>
+            <img class="project-page__img" src="/images/IA.png" alt="">
+            <h2 class="project-page__name">Shifting Peace</h2>
+            <p class="project-page__medium">MaxMSP, Microbit, Projector, Webcam</p>
+            <p class="project-page__date">2025</p>
+            <p class="project-page__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolor ad in, adipisci doloremque eos asperiores reprehenderit laborum quis ipsum voluptates, dicta odio. Repellendus unde quos, voluptatibus maiores voluptatum cumque.</p>
         </div>
     </main>
 </body>

@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
     <link rel="stylesheet" href="/styles/modern-normalize.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="menu-selection.js" defer></script>
-    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -26,14 +37,14 @@
     </header>
 
     <main>
-        <section class="display-btn__container">
+        <section class="display-btn__container" id="display-btn">
             <button class="display-btn" id="display-btn__projects" onclick="displayProjects()">Projects</button>
             <button class="display-btn" id="display-btn__about-me" onclick="displayAboutMe()">About me</button>
             <button class="display-btn" id="display-btn__contact" onclick="displayContact()">Contact</button>
         </section>
 
         <section class="projects body-container" id="projects">
-            <div class="projects__item projects__item--shifting-peace"><a href="shifting-peace.html" target="_blank">
+            <div class="projects__item projects__item--shifting-peace"><a href="shifting-peace.html">
                 <img class="projects__img projects__img--shifting-peace" src="/images/IA.png" alt="Shifting Peace">
                 <div class="projects__label">
                     <h3 class="projects__name">Shifting Peace</h3>

@@ -18,6 +18,7 @@ dd {
 ul,
 ol {
     list-style: none;
+    padding: 0;
 }
 
 /* ul[role='list'],
@@ -80,6 +81,10 @@ textarea,
 select {
     font-family: inherit;
     font-size: inherit;
+}
+
+button {
+    border: none;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
