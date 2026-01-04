@@ -130,16 +130,6 @@ body {
   max-width: 600px;
 }
 
-.nav {
-  /* background-color: white; */
-  /* color: black; */
-  margin-bottom: 1rem;
-}
-
-/* .nav__title {
-  margin: 1rem;
-} */
-
 .nav__list {
   display: flex;
   flex-flow: wrap;
@@ -148,7 +138,6 @@ body {
 
 .nav__option {
   padding: 1rem;
-  /* color: #000; */
 }
 
 .nav__option:hover {
@@ -157,17 +146,14 @@ body {
 
 .nav__option--active {
   background-color: #02a89a;
-  /* color: #000000; */
-  /* border-bottom: var(--primary-accent-color) solid 2px; */
 }
 
 .back-btn {
   display: inline-block;
-  padding: 1rem 0;
+  padding: 2rem 0 1rem 0;
   background-color: #000000;
   color: var(--primary-accent-color);
   font-size: 1.1rem;
-  /* font-size: ; */
 }
 
 .back-btn:hover {
@@ -175,8 +161,11 @@ body {
 }
 
 
-.project-page__img {
+.project-page__media {
+  display: block;
+  /* margin: auto; */
   margin-top: 0.5rem;
+  max-width: 100%;
 }
 
 .project-page__name {
@@ -185,13 +174,26 @@ body {
 }
 
 .project-page__medium {
+  margin-top: 0.3rem;
   color: var(--primary-accent-color);
-  font-size: 1rem;
 }
 
 .project-page__date {
   color: #9e9e9e;
   margin: 0.2rem 0;
+}
+
+.project-page__description {
+  padding-bottom: 2rem;
+}
+
+.project-page__description--first {
+  padding-bottom: 0rem;
+}
+
+.project-page__media-extra {
+  display: block;
+  margin-bottom: 2rem;
 }
 
 
@@ -204,8 +206,10 @@ body {
 
 @media (min-width: 760px) {
   main {
-    background-color: rgb(49, 49, 49);
-    z-index: -3;  
+    background-color: rgb(18, 18, 18);
+    z-index: 9;  
+    position: relative;
+    z-index: 1;
     /* min-height: 100vh; */
   }
 
@@ -214,7 +218,8 @@ body {
     max-width: 580px;
     margin: auto;
     min-height: 100vh;
-    z-index: -1;
+    position: relative;
+    z-index: 3;
   }
 
   .main-container--project {
@@ -226,8 +231,19 @@ body {
     position: absolute;
     width: 100%;
     height: 200px;
-    background-color: red;
-    /* z-index: -1; */
+    z-index: 2;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.7) 56%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%); 
   }
 
+  .display-btn {
+    font-size: 1.2rem;
+  }
+
+  .about-me__text {
+    font-size: 1.1rem;
+  }
+
+  .project-page__description {
+    font-size: 1.1rem;
+  }
 }

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/styles/modern-normalize.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="navbar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -17,21 +16,26 @@
     <nav class="nav">
         <!-- <p class="nav__title"><a href="index.html">CAMILA GUIMARAES-RIVEST</a></p> -->
         <ul class="nav__list">
-            <li class="nav__option nav__option--active"><a href="index.html">Projects</a></li>
-            <li class="nav__option"><a href="index.html">About me</a></li>
-            <li class="nav__option"><a href="index.html">Contact</a></li>
+            <li class="nav__option nav__option--active"><a href="index.html#display-btn">Projects</a></li>
+            <li class="nav__option"><a href="index.html#display-btn">About me</a></li>
+            <li class="nav__option"><a href="index.html#display-btn">Contact</a></li>
         </ul>  
     </nav>
 
     <main>
         <div class="main-container main-container--project">
             <div class="project-container body-container">
-                <a class="back-btn" href="index.html#display-btn"><<< Back</a>
-                <img class="project-page__img" src="/images/IA.png" alt="">
+                <a class="back-btn" href="index.html#shifting-peace"><<< Back</a>
+                <video class="project-page__media" controls width="600px">
+                    <source src="/videos/shifting-peace.mp4" type="video/mp4">
+                </video>
                 <h2 class="project-page__name">Shifting Peace</h2>
                 <p class="project-page__medium">MaxMSP, Microbit, Projector, Webcam</p>
                 <p class="project-page__date">2025</p>
-                <p class="project-page__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolor ad in, adipisci doloremque eos asperiores reprehenderit laborum quis ipsum voluptates, dicta odio. Repellendus unde quos, voluptatibus maiores voluptatum cumque.</p>
+                <p class="project-page__description project-page__description--first">Shifting Peace représente le sentiment de paix et de confort ressentit lors de marches dans des endroits isolés. Les vidéos montrent l’endroit qui m’est le plus chère, un regroupement de chemins de fer abandonnés, caché de la vue de tous. Inspiré par la sérénité des lieux, j’ai voulu créer une expérience relaxante et immersive avec une atmosphère éthérée et onirique.</p>
+                <p class="project-page__description">Dépendamment des mouvements de l’utilisateur détectés par la caméra, différentes zones des lieux apparaissent à l’écran en superposition, toujours avec une dominante. Cela permet à l’utilisateur d’explorer cet environnement et de ressentir ce qu’il a à offrir. Chaque lieu vient avec des sons qui lui son propre pour créer une ambiance paisible. L’accéléromètre du microcontrôleur est utilisé pour ajuster des paramètres visuels.</p>
+                <img class="project-page__media-extra" src="/images/microbit.jpg" alt="">
+                <img class="project-page__media-extra" src="/images/presentation.jpg" alt="">
             </div>
         </div>
     </main>
