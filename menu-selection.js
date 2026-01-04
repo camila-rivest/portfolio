@@ -1,5 +1,5 @@
 function displayProjects() {
-    document.getElementById("projects").style.display = "block";
+    document.getElementById("projects").style.display = "flex";
     document.getElementById("display-btn__projects").style.borderBottom = "#03d8c6 solid 3px";
     
     document.getElementById("about-me").style.display = "none";
