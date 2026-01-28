@@ -21,7 +21,7 @@ body {
 }
 
 .header {
-  background: url(/images/header-mobile.jpg) 40% top no-repeat;
+  /* background: url(/images/header-mobile.jpg) 40% top no-repeat; */
   height: 100vh;
   z-index: -3;
   position: relative;
@@ -227,7 +227,7 @@ body {
 
 @media (min-width: 760px) {
   main {
-    background-color: rgb(18, 18, 18);
+    /* background-color: rgb(18, 18, 18); */
     /* background-color: black; */
     z-index: 9;  
     position: relative;
