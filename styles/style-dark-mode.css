@@ -3,12 +3,11 @@
 }
 
 :root {
-  --background-color: #000;
   --primary-accent-color: #03d8c6;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #000000;
   color: white;
 }
 
@@ -22,7 +21,7 @@ body {
 }
 
 .header {
-  background: url(/images/header-mobile.jpg) 40% top no-repeat;
+  /* background: url(/images/header-mobile.jpg) 40% top no-repeat; */
   height: 100vh;
   z-index: -3;
   position: relative;
@@ -67,7 +66,7 @@ body {
 .display-btn {
   color: white;
   font-size: 1.1rem;
-  background-color: var(--background-color);
+  background-color: #000000;
   border: none;
   padding: 20px 8px;
   cursor: pointer;
@@ -75,7 +74,7 @@ body {
 
 .display-btn:hover {
   color: #ffffffc4;
-  border-bottom: #03d8c6bd solid 3px;
+  /* border-bottom: #03d8c6bd solid 3px; */
 
 }
 
@@ -164,7 +163,7 @@ body {
 .back-btn {
   display: inline-block;
   padding: 2rem 0 1rem 0;
-  /* background-color: #000000; */
+  background-color: #000000;
   color: var(--primary-accent-color);
   font-size: 1.1rem;
 }
@@ -236,7 +235,7 @@ body {
   }
 
   .main-container {
-    background-color: var(--background-color);
+    background-color: #000000;
     max-width: 580px;
     margin: auto;
     min-height: 100vh;
@@ -270,15 +269,14 @@ body {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
   .main-container {
     max-width: 1000px;
+    background-color: #000000;
   }
 
   .projects {
-    /* max-width: 1000px; */
-    max-width: none;
-    gap: 1rem;
+    max-width: 1000px;
   }
 
   .about-me, .contact {
@@ -292,27 +290,5 @@ body {
 
   .project-container {
     max-width: 700px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .main-container {
-    max-width: 2000px;
-  }
-
-  .projects {
-    gap: 2rem;
-  }
-
-  .projects__item {
-    width: 30%;
-    max-width: 460px;
-  }
-
-}
-
-@media (min-width: 1500px) {
-  .projects {
-    gap: 1rem 3rem;
   }
 }

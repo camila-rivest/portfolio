@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="/styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__option nav__option--active"><a href="index.html#display-btn">Projects</a></li>
+            <li class="nav__option"><a href="index.html#display-btn">About me</a></li>
+            <li class="nav__option"><a href="index.html#display-btn">Contact</a></li>
+        </ul>  
+    </nav>
+
+    <main>
+        <div class="main-container main-container--project">
+            <div class="project-container body-container">
+                <a class="back-btn" href="index.html#photos"><<< Back</a>
+                
+                <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/images/purepurepure.jpg">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img2.jpg">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img3.jpg">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <h2 class="project-page__name">Ambient DnB Generator</h2>
+                <p class="project-page__medium">MaxMSP</p>
+                <p class="project-page__date">2025</p>
+                <p class="project-page__description">kkhjkhjkh</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
