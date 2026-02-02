@@ -21,6 +21,22 @@ body {
   margin: auto;
 }
 
+.nav {
+  width: 100%;
+  background-color: #000;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.nav__name {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-left: 1rem;
+}
+
 .header {
   background: url(/images/header-mobile.jpg) 40% top no-repeat;
   height: 100vh;
@@ -33,11 +49,13 @@ body {
 }
 
 .header__welcome {
-  font-size: 2.5rem;
+  font-size: clamp(3rem, 2rem + 4vw, 5rem);
   width: 90%;
   margin: 0 auto 2rem auto;
   padding-top: 3rem;
   text-shadow: 2px 2px 2px #000000;   
+  font-weight: normal;
+  font-family: "Inter";
 }
 
 .header__name {
@@ -51,6 +69,7 @@ body {
 
 .header__fade {
   position: absolute;
+  z-index: 3;
   bottom: 0;
   height: 150px;
   width: 100%;
@@ -74,8 +93,8 @@ body {
 }
 
 .display-btn:hover {
-  color: #ffffffc4;
-  border-bottom: #03d8c6bd solid 3px;
+  color: #ffffffaa;
+  /* border-bottom: #03d8c6bd solid 3px; */
 
 }
 
@@ -105,7 +124,7 @@ body {
 }
 
 .projects__img {
-  border: #03d8c691 solid 3px;
+  border: #02d0bfc9 solid 3px;
 }
 
 .projects__label {
@@ -162,11 +181,13 @@ body {
 }
 
 .back-btn {
+  font-size: 1rem;
   display: inline-block;
-  padding: 2rem 0 1rem 0;
-  /* background-color: #000000; */
+  border-radius: 3px;
+  padding: 0.4rem 1.4rem;
+  margin: 1rem 0 0.5rem 0;
+  background-color: #111111;
   color: var(--primary-accent-color);
-  font-size: 1.1rem;
 }
 
 .back-btn:hover {
@@ -222,7 +243,15 @@ body {
   }  
 
   .back-btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .nav__option {
+    font-size: 1.1rem;
+  }
+
+  .display-btn {
+    font-size: 1.3rem;
   }
 }
 
@@ -234,11 +263,12 @@ body {
     position: relative;
     z-index: 1;
   }
-
+  
   .main-container {
     background-color: var(--background-color);
     max-width: 580px;
     margin: auto;
+    margin-bottom: 3rem;
     min-height: 100vh;
     position: relative;
     z-index: 3;
@@ -255,10 +285,6 @@ body {
     height: 200px;
     z-index: 2;
     background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.7) 56%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%); 
-  }
-
-  .display-btn {
-    font-size: 1.2rem;
   }
 
   .about-me__text {
@@ -315,4 +341,95 @@ body {
   .projects {
     gap: 1rem 3rem;
   }
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+/* .fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+} */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
