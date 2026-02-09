@@ -235,6 +235,15 @@ body {
   padding-bottom: 2rem;
 }
 
+.project-page__media-extra__photos {
+  padding-bottom: 0;
+}
+
+.photos__caption {
+  color: #cecece;
+  margin: 0.25rem 0 2rem 0;
+}
+
 
 
 @media (min-width: 500px) {
