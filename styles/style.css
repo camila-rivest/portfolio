@@ -225,7 +225,7 @@ body {
   padding-bottom: 2rem;
 }
 
-.project-page__description--first {
+.project-page__description--above {
   padding-bottom: 0rem;
 }
 
@@ -235,7 +235,7 @@ body {
   padding-bottom: 2rem;
 }
 
-.project-page__media-extra__photos {
+.project-page__media-extra__padding {
   padding-bottom: 0;
 }
 
@@ -244,6 +244,9 @@ body {
   margin: 0.25rem 0 2rem 0;
 }
 
+.photos__caption--above {
+  margin-bottom: 0rem;
+}
 
 
 @media (min-width: 500px) {
