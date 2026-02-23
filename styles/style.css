@@ -3,8 +3,10 @@
 }
 
 :root {
-  --background-color: #000;
-  --primary-accent-color: #03d8c6;
+  --background-color: #000012;
+  /* --background-color: #000; */
+  --primary-accent-color: #8f8fe3;
+  /* --primary-accent-color: #03d8c6; */
 }
 
 body {
@@ -73,7 +75,8 @@ body {
   bottom: 0;
   height: 150px;
   width: 100%;
-  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.7) 56%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%);
+  /* background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.7) 56%, rgba(0, 0, 0, 0.9) 80%, rgba(0, 0, 0, 1) 100%); */
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, #00001280 30%, #000012b3 56%, #000012e6 80%, #000012 100%);
 }
 
 .display-btn__container {
@@ -124,7 +127,8 @@ body {
 }
 
 .projects__img {
-  border: #02d0bfc9 solid 3px;
+  border: #8f8fe3b6 solid 3px;
+  /* border: #02d0bfc9 solid 3px; */
 }
 
 .projects__label {
@@ -251,7 +255,7 @@ body {
 
 @media (min-width: 500px) {
   .header {
-    background: url(/images/header-desktop.jpg) 40% top no-repeat;
+    background: url(/images/header-desktop1.jpg) 40% top no-repeat;
   }  
 
   .back-btn {
